@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CS449-Project</string>
+    <string-array name="scales_array">
+        <item>...</item>
+        <item>Major</item>
+        <item>Minor</item>
+    </string-array>
+    <string-array name="keys_array">
+        <item>...</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="options_array">
+        <item> </item>
+        <item>Home</item>
+        <item>Info</item>
+    </string-array>
+</resources>
