@@ -10,11 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-import com.example.cs449_project.ScaleCreationAlgorithm;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
-import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position != 0) {
                     scaleSelected = true;
+                    scale = parent.getItemAtPosition(position).toString();
 
                     if(keySelected)
                         submitButton.setVisibility(View.VISIBLE);
@@ -92,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if (position != 0) {
                     keySelected = true;
+                    key = parent.getItemAtPosition(position).toString();
 
                     if(scaleSelected)
                         submitButton.setVisibility(View.VISIBLE);
@@ -132,7 +129,8 @@ public class MainActivity extends AppCompatActivity {
                     temp.append(finishedScale[i]);
                 }
 
-                theScale.setText(temp.toString());
+                //theScale.setText(temp.toString());
+                theScale.setText(String.valueOf(temp));
 
                 theScale.setVisibility(View.VISIBLE);
             }
