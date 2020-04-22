@@ -4,6 +4,8 @@
         <item>...</item>
         <item>Major</item>
         <item>Minor</item>
+        <item>Harmonic Minor</item>
+        <item>Melodic Minor</item>
     </string-array>
     <string-array name="keys_array">
         <item>...</item>

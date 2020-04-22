@@ -29,9 +29,27 @@ public class ScaleCreationAlgorithmTest {
 
     @Test
     public void testMinorScaleCreator() {
-        String[] actual = theCreation.scaleCreator("Minor", "G");
+        String[] actual = theCreation.scaleCreator("Minor", "D");
 
-        String[] expected = {"G", "A", "A#", "C", "D", "D#", "F"};
+        String[] expected = {"D", "E", "F", "G", "A", "A#", "C"};
+
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void testHarmonicMinorScaleCreator() {
+        String[] actual = theCreation.scaleCreator("Harmonic Minor", "E");
+
+        String[] expected = {"E", "F#", "G", "A", "B", "C", "D#"};
+
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void testMelodicMinorScaleCreator() {
+        String[] actual = theCreation.scaleCreator("Melodic Minor", "F");
+
+        String[] expected = {"F", "G", "G#", "A#", "C", "D", "E"};
 
         assertArrayEquals(expected, actual);
     }
