@@ -6,7 +6,6 @@ CS449 Software Engineering Project
 HOW TO RUN AND EXPERIENCE ALL OF THE FEATURES OF THE APPLICATION:
   
   Simply open the app using Android Studio and run it.
-  
   To use the app, select a scale from the drop-down.
   
   Then select your key. Once both are selected, the submit button will appear.
