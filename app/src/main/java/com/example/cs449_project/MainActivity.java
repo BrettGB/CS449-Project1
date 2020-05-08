@@ -1,7 +1,6 @@
 package com.example.cs449_project;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //create all variables
     Spinner scaleSpinner;
     Spinner keySpinner;
     Spinner optionsSpinner;
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //initialize all variables
         submitButton = findViewById(R.id.submitButton);
         submitButton.setVisibility(View.INVISIBLE);
         homeButton = findViewById(R.id.homeButton);
@@ -172,7 +173,5 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-
-
     }
 }
